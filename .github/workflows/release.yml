@@ -1,4 +1,4 @@
-name: 🚀 Release @neptrek/shared-types
+name: 🚀 Release @neptrek/types
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
       - next
     paths:
-      - "packages/shared-types/**"
+      - "packages/types/**"
 
 permissions:
   contents: write
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: packages/shared-types
+        working-directory: packages/types
 
     steps:
       - name: 📚 Checkout

@@ -15,7 +15,7 @@ importers:
         specifier: ^5.7.2
         version: 5.7.2
 
-  packages/shared-types:
+  packages/types:
     devDependencies:
       semantic-release:
         specifier: ^24.2.0

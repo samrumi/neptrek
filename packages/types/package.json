@@ -1,5 +1,5 @@
 {
-  "name": "@neptrek/shared-types",
+  "name": "@neptrek/types",
   "version": "0.0.0-development",
   "author": "Sameer Thapa",
   "main": "./dist/index.js",

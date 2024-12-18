@@ -1,4 +1,4 @@
-# 🌊 @neptrek/shared-types
+# 🌊 @neptrek/types
 
 Welcome to the depths of type safety! This package contains the shared TypeScript types that keep the Neptrek project sailing smoothly. 
 
@@ -15,13 +15,13 @@ Drop your anchor and install with your favorite package manager:
 
 ```bash
 # Using pnpm (preferred)
-pnpm add @neptrek/shared-types
+pnpm add @neptrek/types
 
 # Using npm
-npm install @neptrek/shared-types
+npm install @neptrek/types
 
 # Using yarn
-yarn add @neptrek/shared-types
+yarn add @neptrek/types
 ```
 
 ## 🌊 Usage
@@ -29,7 +29,7 @@ yarn add @neptrek/shared-types
 Import types as easily as a fish takes to water:
 
 ```typescript
-import type { SuccessResponse, ErrorResponse } from '@neptrek/shared-types';
+import type { SuccessResponse, ErrorResponse } from '@neptrek/types';
 
 // Success Response Example
 const success: SuccessResponse<{ id: string }> = {
