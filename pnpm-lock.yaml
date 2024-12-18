@@ -15,6 +15,16 @@ importers:
         specifier: ^5.7.2
         version: 5.7.2
 
+  packages/server:
+    dependencies:
+      '@neptrek/types':
+        specifier: ^1.1.0
+        version: 1.1.0
+    devDependencies:
+      typescript:
+        specifier: ^5.7.2
+        version: 5.7.2
+
   packages/types:
     devDependencies:
       semantic-release:
@@ -307,6 +317,10 @@ packages:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
     dev: true
+
+  /@neptrek/types@1.1.0:
+    resolution: {integrity: sha512-LcGHllIP4AJi+hig+nRoSMn8GkXWVBQ8Zmd3DaktpFrDLjQtS7YOkaF3MTVcDgNJDdGYqQMsV/lMmtl7CromHw==}
+    dev: false
 
   /@nodelib/fs.scandir@2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
