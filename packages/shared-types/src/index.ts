@@ -8,5 +8,3 @@ export type ErrorResponse = {
   error: string;
   isFormError?: boolean;
 };
-
-export type ApiResponse<T = void> = SuccessResponse<T> | ErrorResponse;
