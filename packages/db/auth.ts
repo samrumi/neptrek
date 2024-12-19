@@ -1,7 +1,7 @@
 import { betterAuth } from "better-auth";
 import { drizzleAdapter, type DB } from "better-auth/adapters/drizzle";
 import { admin } from "better-auth/plugins";
-import { createClient } from "./client";
+import { createClient } from "./src/client";
 
 const db = createClient(process.env["DATABASE_URL"]!);
 
