@@ -45,6 +45,9 @@ importers:
       '@hono/node-server':
         specifier: ^1.13.7
         version: 1.13.7(hono@4.6.14)
+      '@neptrek/db':
+        specifier: ^1.2.0
+        version: 1.2.0
       '@neptrek/types':
         specifier: ^1.1.0
         version: 1.1.0
@@ -613,6 +616,44 @@ packages:
 
   /@levischuck/tiny-cbor@0.2.2:
     resolution: {integrity: sha512-f5CnPw997Y2GQ8FAvtuVVC19FX8mwNNC+1XJcIi16n/LTJifKO6QBgGLgN3YEmqtGMk17SKSuoWES3imJVxAVw==}
+    dev: false
+
+  /@neptrek/db@1.2.0:
+    resolution: {integrity: sha512-kvYEuQQPVy3Bbv39XLqR+I+jhc8d+/iwxUaRYx4z7GB961TQLwTpLaWGdwenn51rIF8Q49CwkrDSsgg6iNC8pw==}
+    dependencies:
+      better-auth: 1.0.22
+      drizzle-orm: 0.38.2(postgres@3.4.5)
+      postgres: 3.4.5
+    transitivePeerDependencies:
+      - '@aws-sdk/client-rds-data'
+      - '@cloudflare/workers-types'
+      - '@electric-sql/pglite'
+      - '@libsql/client'
+      - '@libsql/client-wasm'
+      - '@neondatabase/serverless'
+      - '@op-engineering/op-sqlite'
+      - '@opentelemetry/api'
+      - '@planetscale/database'
+      - '@prisma/client'
+      - '@tidbcloud/serverless'
+      - '@types/better-sqlite3'
+      - '@types/pg'
+      - '@types/react'
+      - '@types/sql.js'
+      - '@vercel/postgres'
+      - '@xata.io/client'
+      - better-sqlite3
+      - bun-types
+      - encoding
+      - expo-sqlite
+      - knex
+      - kysely
+      - mysql2
+      - pg
+      - prisma
+      - react
+      - sql.js
+      - sqlite3
     dev: false
 
   /@neptrek/types@1.1.0:
