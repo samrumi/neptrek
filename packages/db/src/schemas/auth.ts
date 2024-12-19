@@ -1,4 +1,5 @@
 import { boolean, pgTable, text, timestamp } from "drizzle-orm/pg-core";
+import type { auth } from "../../auth";
 
 export const user = pgTable("user", {
   id: text("id").primaryKey(),
@@ -59,3 +60,7 @@ export type NTUser = typeof user.$inferSelect;
 export type NTSession = typeof session.$inferSelect;
 export type NTAccount = typeof account.$inferSelect;
 export type NTVerification = typeof verification.$inferSelect;
+
+export type NTAuth = typeof auth;
+export type NTAuthSession = NTAuth["$Infer"]["Session"];
+export type NTAuthUser = NTAuth["$Infer"]["Session"]["user"];

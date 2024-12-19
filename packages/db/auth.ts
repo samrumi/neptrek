@@ -1,11 +1,11 @@
 import { betterAuth } from "better-auth";
-import { drizzleAdapter } from "better-auth/adapters/drizzle";
+import { drizzleAdapter, type DB } from "better-auth/adapters/drizzle";
 import { admin } from "better-auth/plugins";
-import { createClient } from "./src";
+import { createClient } from "./client";
 
 const db = createClient(process.env["DATABASE_URL"]!);
 
-export const auth = betterAuth({
+export const auth: ReturnType<typeof betterAuth<DB>> = betterAuth<DB>({
   database: drizzleAdapter(db, {
     provider: "pg",
   }),
