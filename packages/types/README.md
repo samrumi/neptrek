@@ -1,67 +1,90 @@
-# 🌊 @neptrek/types
+# 🏔️ @neptrek/types
 
-Welcome to the depths of type safety! This package contains the shared TypeScript types that keep the Neptrek project sailing smoothly. 
+Welcome to the base camp of type safety! These TypeScript types will be your trusty guide through the Neptrek codebase trails.
 
-## 🧜‍♂️ What's Inside?
+## 🎒 What's in Your Backpack?
 
-Just like Neptune's trident has three points, we have three main types:
-- `SuccessResponse<T>` - For when everything goes swimmingly
-- `ErrorResponse` - For when we hit rough waters
-- More types coming soon... the ocean is deep!
+Just like every trekker needs essential gear, we've packed the core types you'll need:
 
-## 🚢 Installation
+- 🗺️ `NTApiResponse` - Your map for API navigation
+- 🧭 `NTTrekTypes` - Types for all your trekking adventures
+- ⛺ `NTAuthTypes` - Your shelter for authentication
+- And more types waiting to be discovered on the trail!
 
-Drop your anchor and install with your favorite package manager:
+## 🏕️ Installation
+
+Set up your base camp with your favorite package manager:
 
 ```bash
-# Using pnpm (preferred)
+# Using pnpm (our favorite trail companion)
 pnpm add @neptrek/types
 
-# Using npm
+# Using npm (the classic route)
 npm install @neptrek/types
 
-# Using yarn
+# Using yarn (for those who like different paths)
 yarn add @neptrek/types
 ```
 
-## 🌊 Usage
+## 🥾 Usage
 
-Import types as easily as a fish takes to water:
+As easy as following trail markers:
 
 ```typescript
-import type { SuccessResponse, ErrorResponse } from '@neptrek/types';
+import type { NTApiResponse, NTTrekDifficulty } from '@neptrek/types';
 
-// Success Response Example
-const success: SuccessResponse<{ id: string }> = {
+// Mark your trail with proper types
+const response: NTApiResponse<{ trailId: string }> = {
   success: true,
-  message: "Smooth sailing!",
-  data: { id: "neptune-123" }
+  message: "Trail found!",
+  data: { trailId: "everest-base-camp-01" }
 };
 
-// Error Response Example
-const error: ErrorResponse = {
-  success: false,
-  error: "Hit an iceberg!",
-  isFormError: true
-};
+// Choose your path wisely
+const difficulty: NTTrekDifficulty = "challenging";
 ```
 
-## 🏊‍♂️ Development
+## 🗻 Type Categories
+
+### Summit Types (API Responses)
+```typescript
+type NTApiResponse<T> = NTSuccessResponse<T> | NTErrorResponse;
+```
+
+### Trail Types (Trek Related)
+```typescript
+type NTTrekDifficulty = "easy" | "moderate" | "challenging" | "difficult" | "extreme";
+```
+
+### Base Camp Types (Auth)
+```typescript
+interface NTUser {
+  id: string;
+  name: string;
+  // More fields for our trekking community
+}
+```
+
+## 🏃‍♂️ Development
 
 ```bash
-# Install dependencies
+# Pack your gear (install dependencies)
 pnpm install
 
-# Build
-pnpm build
-
-# Watch mode
+# Start your trek (development mode)
 pnpm dev
+
+# Reach the summit (build)
+pnpm build
 ```
 
-## 🌊 License
+## 🌄 Contributing
 
-ISC - As free as the ocean!
+Every great trek starts with a single step! Feel free to contribute and help us map new type territories.
+
+## 🎯 License
+
+ISC - As free as the mountain air!
 
 ---
-Made with 🌊 by the Qriousco team
+Built with 🏔️ by the Neptrek team - Guiding developers to type-safe peaks
