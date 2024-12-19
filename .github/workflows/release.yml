@@ -9,6 +9,12 @@ on:
       - "packages/types/**"
       - "packages/db/**"
 
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  packages: write
+
 jobs:
   release-types:
     name: 📦 Release Types Package
