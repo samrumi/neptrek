@@ -58,11 +58,11 @@ importers:
         specifier: ^1.13.7
         version: 1.13.7(hono@4.6.14)
       '@neptrek/db':
-        specifier: ^1.2.0
-        version: 1.2.0
+        specifier: ^1.2.4
+        version: 1.2.4
       '@neptrek/types':
-        specifier: ^1.1.0
-        version: 1.1.0
+        specifier: ^1.2.5
+        version: 1.2.5
       hono:
         specifier: ^4.6.14
         version: 4.6.14
@@ -642,8 +642,8 @@ packages:
     resolution: {integrity: sha512-f5CnPw997Y2GQ8FAvtuVVC19FX8mwNNC+1XJcIi16n/LTJifKO6QBgGLgN3YEmqtGMk17SKSuoWES3imJVxAVw==}
     dev: false
 
-  /@neptrek/db@1.2.0:
-    resolution: {integrity: sha512-kvYEuQQPVy3Bbv39XLqR+I+jhc8d+/iwxUaRYx4z7GB961TQLwTpLaWGdwenn51rIF8Q49CwkrDSsgg6iNC8pw==}
+  /@neptrek/db@1.2.4:
+    resolution: {integrity: sha512-Pg+s2FHGEhJtLWhBc8AuVwg6/ru5KtwnS0u8Ft0suEw10imGX5MfSZc6aiCbyDySP7fW9u3qMSQYbSJaygrr1w==}
     dependencies:
       better-auth: 1.0.22
       drizzle-orm: 0.38.2(postgres@3.4.5)
@@ -680,8 +680,10 @@ packages:
       - sqlite3
     dev: false
 
-  /@neptrek/types@1.1.0:
-    resolution: {integrity: sha512-LcGHllIP4AJi+hig+nRoSMn8GkXWVBQ8Zmd3DaktpFrDLjQtS7YOkaF3MTVcDgNJDdGYqQMsV/lMmtl7CromHw==}
+  /@neptrek/types@1.2.5:
+    resolution: {integrity: sha512-Fh0gR6Sjg0FpBInielIRMcc/h9JzDGx1fmB8gwHLoz1gA72s3PTtmOu15MsrTL5e5+W6ahkohcg+OXVREBSZug==}
+    dependencies:
+      zod: 3.24.1
     dev: false
 
   /@noble/ciphers@0.6.0:
