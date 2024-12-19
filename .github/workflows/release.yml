@@ -5,9 +5,6 @@ on:
     branches:
       - main
       - next
-    paths:
-      - "packages/types/**"
-      - "packages/db/**"
 
 permissions:
   contents: write
