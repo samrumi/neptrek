@@ -1,7 +1,8 @@
 {
-  "name": "@neptrek/types",
+  "name": "@neptrek/db",
   "version": "0.0.0-development",
   "author": "Sameer Thapa",
+  "description": "🌊 Database layer for the Neptrek project",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -9,23 +10,25 @@
     "dist",
     "README.md"
   ],
-  "devDependencies": {
-    "semantic-release": "^24.2.0",
-    "tsup": "^8.3.5",
-    "typescript": "^5.7.2"
-  },
-  "description": "🌊 Shared TypeScript types for the Neptrek project",
-  "license": "ISC",
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
     "semantic-release": "semantic-release"
   },
+  "dependencies": {
+    "better-auth": "^1.0.22",
+    "drizzle-orm": "^0.38.2",
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "@neptrek/types": "workspace:*",
+    "@types/node": "^22.10.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "license": "ISC",
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "zod": "^3.24.1"
   }
 }

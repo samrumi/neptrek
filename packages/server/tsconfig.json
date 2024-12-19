@@ -17,7 +17,6 @@
       "noUnusedParameters": false,
       "noPropertyAccessFromIndexSignature": false
     },
-    "exclude": ["release.config.cjs", "dist", "node_modules"],
-    "include": ["src", "release.config.js"]
+    "include": ["src"]
   }
   

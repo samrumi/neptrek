@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"pnpm run dev:server\" \"pnpm run dev:web\"",
-    "dev:server": "pnpm run dev -w server",
-    "dev:web": "pnpm run dev -w web",
-    "build": "pnpm run build --workspaces"
+    "dev:server": "pnpm --filter server dev",
+    "dev:web": "pnpm --filter web dev",
+    "build": "pnpm -r build"
   },
   "keywords": [],
   "author": "",

@@ -1,10 +1,6 @@
-export type SuccessResponse<T = void> = {
-  success: true;
-  message: string;
-} & (T extends void ? {} : { data: T });
+// Core exports
+export * from "./core/api";
 
-export type ErrorResponse = {
-  success: false;
-  error: string;
-  isFormError?: boolean;
-};
+// Feature exports
+export * from "./features/auth";
+export * from "./features/trek";
