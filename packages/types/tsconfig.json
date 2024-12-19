@@ -18,6 +18,6 @@
       "noPropertyAccessFromIndexSignature": false
     },
     "exclude": ["release.config.cjs", "dist", "node_modules"],
-    "include": ["src"]
+    "include": ["src", "release.config.js"]
   }
   
